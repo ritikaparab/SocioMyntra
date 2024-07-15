@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Dress Trial Room</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(248, 210, 223);
+            flex-direction: column;
+        }
+        .Vir h1 {
+            margin-bottom: 20px;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: 400px;
+            width: 250px;
+            border-radius: 5%;
+            margin: 10px;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .card button {
+            font-size: medium;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 10%;
+            position: relative;
+        }
+        .card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="Vir" style="top: auto;">
+        <h1>Try on some outfits!!</h1>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="/mensvest.png" alt="Image 1"></img>
+            <button onclick="window.location.href='/run-vdress'">Try this!</button>
+        </div>
+        <div class="card">
+            <img src="/girl_top.png" alt="Image 2"></img>
+            <button onclick="window.location.href='/run-vdress1'">Try this!</button>
+        </div>
+        <div class="card">
+            <img src="/shirtblack.png" alt="Image 3"></img>
+            <button onclick="window.location.href='/run-vdress3'">Try this!</button>
+        </div>
+        <div class="card">
+            <img src="/whiteshirt.png" alt="Image 4"></img>
+            <button onclick="window.location.href='/run-vdress2'">Try this!</button>
+        </div>
+    </div>
+</body>
+</html>
